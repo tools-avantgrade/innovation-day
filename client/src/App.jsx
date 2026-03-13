@@ -2,6 +2,8 @@ import React from 'react';
 import Header from './components/Header';
 import ProgressBar from './components/ProgressBar';
 import SlotCard from './components/SlotCard';
+import Leaderboard from './components/Leaderboard';
+import TranscriptUpload from './components/TranscriptUpload';
 import { useSession } from './hooks/useSession';
 
 export default function App() {
@@ -47,6 +49,9 @@ export default function App() {
             />
           ))}
         </div>
+
+        <Leaderboard />
+        <TranscriptUpload />
 
         <footer className="footer">
           <button className="btn btn-admin" onClick={resetSlots}>
