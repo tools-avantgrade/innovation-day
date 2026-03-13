@@ -1,0 +1,22 @@
+{
+  "name": "tgii-booking",
+  "version": "1.0.0",
+  "description": "Thank God It's Innovation - Weekly booking portal for AvantGrade.com",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"node server/index.js\" \"cd client && npx vite\"",
+    "build": "cd client && npx vite build",
+    "start": "node server/index.js",
+    "postinstall": "cd client && npm install"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.7.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "luxon": "^3.5.0",
+    "node-cron": "^3.0.3"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}
